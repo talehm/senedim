@@ -11,7 +11,7 @@ import {
 } from './type';
 
 export const fetchCategories = () => dispatch => {
-    fetch('http://localhost:3200/category')
+    fetch('http://localhost:3100/category')
          .then(response => response.json())
          .then(category => dispatch({
            type: FETCH_PRODUCT_CATEGORY,
@@ -21,7 +21,7 @@ export const fetchCategories = () => dispatch => {
 };
 
 export const fetchProducts = id => dispatch => {
-  fetch('http://localhost:3200/products', {
+  fetch('http://localhost:3100/products', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
@@ -40,7 +40,7 @@ export const fetchProducts = id => dispatch => {
 };
 
 export const fetchTempSections = id => dispatch => {
-  fetch('http://localhost:3200/default_temp', {
+  fetch('http://localhost:3100/default_temp', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'

@@ -30,8 +30,6 @@ app.post('/products', function (req, res) {
       res.send(results)
     });
 
-    console.log(category_id);
-
 });
 
 app.post('/default_temp', function (req, res) {
@@ -58,6 +56,6 @@ app.get('/category', function (req, res) {
 
 });
 // Start the server
-app.listen(3200, () => {
+app.listen(3100, () => {
  console.log('Go to http://localhost:3001/posts to see posts');
 });

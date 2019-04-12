@@ -43,24 +43,13 @@ handleClick(id){
   this.setState({loadProducts: true});
 
 
-  /*fetch('http://localhost:3200/products',{
-   method: 'POST',
-   body: JSON.stringify({
-     category_id: this.props.category[id-1].id,
-   }),
-   headers: {"Content-Type": "application/json"}
- })
- .then(response => response.json())
- .then(data => {
-   this.setState({products:data});
-  });*/
-
-
-
-
 }
 
 render(){
+  console.log(this.state.loadProducts);
+  console.log(this.props.products);
+  
+  
   if( this.state.loadProducts && this.state.itemAction){
     const product=this.props.products[this.state.itemId-1]
     return (<div>     <ProductEdit  data={{category_id:product.category_id, name:product.name}} />
