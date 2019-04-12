@@ -1,0 +1,14 @@
+CREATE or replace VIEW view_2 AS 
+	SELECT 
+        category_id, COUNT(*) AS product_sum
+    FROM
+        products
+    GROUP BY category_id;
+    
+CREATE or replace VIEW view_1 AS
+    SELECT 
+        *
+    FROM
+        category
+            LEFT JOIN
+        view_2 AS a ON category.id = a.category_id;

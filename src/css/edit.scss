@@ -1,0 +1,86 @@
+$themecolor1: #4dd2ff;
+
+.tools{ position: absolute; right:150px;color:black;
+
+}
+.toolbarButtons button{margin:0 15px !important;
+  span{
+    padding-right: 10px;
+  }
+}
+.MuiAppBar-colorPrimary-12{color: black !important;}
+.configOpenbtn{ position: fixed; top:50%;color:white !important; min-width: 0 !important;
+  svg{color:rgba(0,0,0,0.9); font-size: 60px;}
+  button{padding: 0;}
+}
+.tabBtnLeft{position: relative;; bottom: 0; left:0; padding: 0;}
+.tabBtnRight{position: relative;; bottom: 0; right:0; padding: 0;}
+.tabBtnAdd{position: relative;; bottom: 0px; padding: 0;}
+#btnActions{position: fixed; bottom:0;}
+.MuiCollapse-wrapperInner-8{}
+#tabContent{align-items: center;
+  margin:0 !important;
+justify-content: center;
+align-content: center;
+
+position: absolute;
+top: 50%;
+margin-bottom:100px;
+left: 50%;
+
+-ms-transform: translate(-50%, -50%);
+
+transform: translate(-50%, -50%);}
+[role="tabpanel"]{min-height:65vh !important;position: relative; overflow: hidden;overflow-y: scroll; padding:0;}
+#docConfig {background-color: #333333;}
+#iconPlus {background-color: blue !important;}
+#avatar {width:300px !important; height:300px !important;
+  .personicon{font-size: 200px;}
+}
+#skillTag  {
+  div div:not([role="combobox"]){ background-color: $themecolor1 !important; font-size: 20px !important; border-radius: 50px !important; padding:5px 15px !important; }
+ input{font-size: 20px !important;}
+}
+
+.addElemIcon{background-color: $themecolor1 !important;
+  svg{color:white;}
+}
+.deleteElementIcon{color: #e6e6e6 !important; float:right;font-size: 30px !important;width:1em !important;
+  :hover{color:red; cursor: pointer;}
+}
+.editElementIcon{color: #e6e6e6 !important; float:right;font-size: 30px !important;width:1em !important;
+  :hover{color:#666666; cursor: pointer;}
+}
+
+.arrowIcon{color:$themecolor1 !important;
+  svg{font-size:90px !important; }
+}
+.arrowIcon:hover{cursor: pointer;}
+.sectionHeader{color:#00ace6; text-align: center;}
+.LabelIcon{font-size:40px !important; margin-bottom: 7px;}
+.sectionIcons{color:$themecolor1;font-size: 30px !important;width:1em !important; margin-bottom: 20px; margin-right:5px;padding:10px}
+.tagIcon{color:$themecolor1; font-size: 30px !important;width:1em !important; margin-bottom: 5px; margin-right:5px;padding:10px}
+.TextField { width:100% !important;
+     label{font-size: 18px !important; line-height: 0px; }
+    input{font-size: 18px; padding:10px;
+    }
+  }
+.expansionPanel{background-color: $themecolor1 !important;
+  p{font-size: 18px !important;}}
+.expansionDetails{margin-top: 50px !important; padding-bottom: 60px !important;}
+.textFieldGrid{margin-bottom:10px;}
+.dmTOMv{background-color: #258e25  !important; padding:10px 15px !important; margin:0 !important;
+  svg{font-size:20px !important; color:white !important;
+}
+}
+.chqPrB span{font-size: 20px !important;}
+.chqPrB:hover{background-color: $themecolor1;
+  svg{color:black;}}
+[role="tablist"]{
+  li{
+    margin-right:2px !important; font-size:17px;
+    button{background-color: inherit !important;
+      svg{ margin-bottom:2px !important; color:gray;}
+    }
+  }
+}
