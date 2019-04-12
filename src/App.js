@@ -9,6 +9,7 @@ class App extends Component {
   render() {
     return (
        <Provider store={store}>
+       <h1>Hello</h1>
         <div className="App" >
          <Navbar />
          <Main />
